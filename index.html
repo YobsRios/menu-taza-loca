@@ -6,53 +6,71 @@
     <title>La Taza Loca</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {{
+        * {
+            box-sizing: border-box;
+        }
+        body {
             margin: 0;
             font-family: 'Georgia', serif;
             background-color: #f0e7da;
             color: #5b3923;
-        }}
-        header {{
+        }
+        header {
             background-color: #5b3923;
             color: #fff;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
-        }}
-        nav {{
+        }
+        nav {
             background-color: #7b5237;
             padding: 10px;
             text-align: center;
-        }}
-        nav a {{
+        }
+        nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 10px;
             font-weight: bold;
-        }}
-        .hero {{
-            padding: 30px;
+            display: inline-block;
+        }
+        .hero {
+            padding: 30px 15px;
             text-align: center;
-        }}
-        .hero img {{
-            max-width: 100%;
+        }
+        .hero img {
+            width: 100%;
+            max-width: 720px;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }}
-        .section {{
-            padding: 40px 20px;
+        }
+        .section {
+            padding: 30px 15px;
             text-align: center;
-        }}
-        .section h2 {{
+        }
+        .section h2 {
             margin-bottom: 20px;
             color: #5b3923;
-        }}
-        footer {{
+        }
+        footer {
             background-color: #5b3923;
             color: #fff;
             text-align: center;
             padding: 15px 10px;
-        }}
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            .section h2 {
+                font-size: 1.3em;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
     </style>
 </head>
 <body>

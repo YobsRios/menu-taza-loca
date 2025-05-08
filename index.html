@@ -1,14 +1,15 @@
 
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <title>La Taza Loca</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." referrerpolicy="no-referrer" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>La Taza Loca</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
         * {
             box-sizing: border-box;
         }
@@ -155,53 +156,50 @@
                 margin: 5px 0;
             }
         }
-    </style>
-</head>
+    
+.nav-link {
+    color: white !important;
+    text-decoration: none;
+}
+.nav-link:visited {
+    color: white !important;
+}
+</style>
+</link></head>
 <body>
-
 <header>
-    <h1>La Taza Loca ☕</h1>
-    <p>Tu rincón favorito de Café & Lattes</p>
+<h1>La Taza Loca ☕</h1>
+<p>Tu rincón favorito de Café &amp; Lattes</p>
 </header>
-
 <nav>
-    <a href="#menu"><i class="fas fa-mug-hot"></i> Menú</a>
-    <a href="#nosotros"><i class="fas fa-users"></i> Nosotros</a>
-    <a href="#contacto"><i class="fas fa-map-marker-alt"></i> Contacto</a>
+<a class="nav-link" href="#menu"><i class="fas fa-mug-hot"></i> Menú</a>
+<a class="nav-link" href="#nosotros"><i class="fas fa-users"></i> Nosotros</a>
+<a class="nav-link" href="#contacto"><i class="fas fa-map-marker-alt"></i> Contacto</a>
 </nav>
-
 <section class="hero" id="menu">
-    <h2>Descubre nuestro Menú</h2>
-    <img src="menu-taza-loca.png" alt="Menú La Taza Loca">
+<h2>Descubre nuestro Menú</h2>
+<img alt="Menú La Taza Loca" src="menu-taza-loca.png"/>
 </section>
-
 <section class="section" id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <p>En La Taza Loca, nos apasiona el buen café. Desde los granos seleccionados hasta la última gota en tu taza, cada bebida es preparada con amor.  
+<h2>Sobre Nosotros</h2>
+<p>En La Taza Loca, nos apasiona el buen café. Desde los granos seleccionados hasta la última gota en tu taza, cada bebida es preparada con amor.  
     Nuestro objetivo es ofrecerte una experiencia cálida, auténtica y llena de sabor.</p>
 </section>
-
 <section class="section" id="contacto">
-    <h2>Contáctanos</h2>
-    <p>📍 Ruta Mariano Abasolo 7908, Mariano Matamoros, 22206 Tijuana, B.C., México</p>
-    <p>📞 664 437 0267 &nbsp;&nbsp;|&nbsp;&nbsp; 664 563 16 75</p>
-    <p>💬 WhatsApp disponible</p>
-    <iframe 
-        src="https://www.google.com/maps?q=Ruta+Mariano+Abasolo+7908,+Mariano+Matamoros,+22206+Tijuana,+B.C.,+México&output=embed"
-        allowfullscreen>
-    </iframe>
+<h2>Contáctanos</h2>
+<p>📍 Ruta Mariano Abasolo 7908, Mariano Matamoros, 22206 Tijuana, B.C., México</p>
+<p>📞 664 437 0267   |   664 563 16 75</p>
+<p>💬 WhatsApp disponible</p>
+<iframe allowfullscreen="" src="https://www.google.com/maps?q=Ruta+Mariano+Abasolo+7908,+Mariano+Matamoros,+22206+Tijuana,+B.C.,+México&amp;output=embed">
+</iframe>
 </section>
-
 <footer>
-    <p>© 2025 La Taza Loca. Todos los derechos reservados.</p>
+<p>© 2025 La Taza Loca. Todos los derechos reservados.</p>
 </footer>
-
-
 <!-- Botón de scroll hacia arriba -->
-<button onclick="scrollToTop()" id="topBtn" title="Volver arriba">
-    <i class="fas fa-arrow-up"></i>
+<button id="topBtn" onclick="scrollToTop()" title="Volver arriba">
+<i class="fas fa-arrow-up"></i>
 </button>
-
 <script>
     // Mostrar botón al hacer scroll
     window.onscroll = function() { toggleTopButton(); };
@@ -219,7 +217,6 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 </script>
-
 <style>
 #topBtn {
     display: none;
@@ -241,6 +238,5 @@
     background-color: #5b3923;
 }
 </style>
-
 </body>
 </html>

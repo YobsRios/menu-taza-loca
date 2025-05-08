@@ -124,5 +124,51 @@
     <p>© 2025 La Taza Loca. Todos los derechos reservados.</p>
 </footer>
 
+
+<!-- Botón de scroll hacia arriba -->
+<button onclick="scrollToTop()" id="topBtn" title="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    // Mostrar botón al hacer scroll
+    window.onscroll = function() { toggleTopButton(); };
+
+    function toggleTopButton() {
+        const btn = document.getElementById("topBtn");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+<style>
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 99;
+    font-size: 20px;
+    background-color: #7b5237;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+#topBtn:hover {
+    background-color: #5b3923;
+}
+</style>
+
 </body>
 </html>

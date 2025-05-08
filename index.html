@@ -3,31 +3,92 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Menú - La Taza Loca</title>
+    <title>La Taza Loca</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {{
-            background-color: #f0e7da;
-            font-family: 'Georgia', serif;
-            text-align: center;
             margin: 0;
-            padding: 0;
-        }}
-        img {{
-            margin-top: 30px;
-            max-width: 95%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }}
-        h1 {{
-            margin-top: 20px;
-            font-size: 2.5em;
+            font-family: 'Georgia', serif;
+            background-color: #f0e7da;
             color: #5b3923;
+        }}
+        header {{
+            background-color: #5b3923;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }}
+        nav {{
+            background-color: #7b5237;
+            padding: 10px;
+            text-align: center;
+        }}
+        nav a {{
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }}
+        .hero {{
+            padding: 30px;
+            text-align: center;
+        }}
+        .hero img {{
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }}
+        .section {{
+            padding: 40px 20px;
+            text-align: center;
+        }}
+        .section h2 {{
+            margin-bottom: 20px;
+            color: #5b3923;
+        }}
+        footer {{
+            background-color: #5b3923;
+            color: #fff;
+            text-align: center;
+            padding: 15px 10px;
         }}
     </style>
 </head>
 <body>
-    <h1>Menú - La Taza Loca</h1>
+
+<header>
+    <h1>La Taza Loca ☕</h1>
+    <p>Tu rincón favorito de Café & Lattes</p>
+</header>
+
+<nav>
+    <a href="#menu">Menú</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="hero" id="menu">
+    <h2>Descubre nuestro Menú</h2>
     <img src="menu-taza-loca.png" alt="Menú La Taza Loca">
+</section>
+
+<section class="section" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>En La Taza Loca, nos apasiona el buen café. Desde los granos seleccionados hasta la última gota en tu taza, cada bebida es preparada con amor.  
+    Nuestro objetivo es ofrecerte una experiencia cálida, auténtica y llena de sabor.</p>
+</section>
+
+<section class="section" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>📍 Mariano Abasolo #7908, Colonia El Pípila</p>
+    <p>📞 664 437 0267 &nbsp;&nbsp;|&nbsp;&nbsp; 664 563 16 75</p>
+    <p>💬 WhatsApp disponible</p>
+</section>
+
+<footer>
+    <p>© 2025 La Taza Loca. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
